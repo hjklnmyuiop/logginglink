@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.6.95:8848 #nacos服务器
+        namespace: 899ae177-b497-4c34-9a1e-4ea438e23c89  #命名空间在nacos中添加
+        group: DEFAULT_GROUP  #分组名称，配置列表中的Group
+        file-extension: yml   #文件格式，配置列表中的Group
+        prefix: scm          #配置文件名称，配置列表中的Group
+      discovery:
+        server-addr: 172.16.6.95:8848
+        namespace: 899ae177-b497-4c34-9a1e-4ea438e23c89

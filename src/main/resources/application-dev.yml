@@ -1,0 +1,17 @@
+server:
+  port: 11100
+logging:
+  level:
+    com:
+      example:
+        devguo:
+          controller: debug
+    org:
+      springframework:
+        web: debug
+  file:
+    path: log
+  config: classpath:logback-spring.xml
+spring:
+  application:
+    name: scm-dev
